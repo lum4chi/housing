@@ -1,6 +1,5 @@
 import scrapy
 import re
-from itertools import zip_longest
 from housing.items import HousingItem
 
 
@@ -10,6 +9,15 @@ class ImmobiliareMilanoSpider(scrapy.Spider):
     allowed_domains = ["immobiliare.it"]
     # Do your search and then copy/paste url
     start_urls = ["https://www.immobiliare.it/vendita-case/milano/?criterio=rilevanza"]
+    english_translation = {
+        "locali": "room",
+        "superficie": "area",
+        "bagni": "baths",
+        "piano": "floor",
+        "unità": "unit",
+        "immobile": "real estate",
+        "garantito": "guaranteed",
+    }
 
     def parse(self, response):
         houses = response.css(".listing-item_body")
@@ -22,22 +30,18 @@ class ImmobiliareMilanoSpider(scrapy.Spider):
                 # Sometimes they want to show a older/newer price
                 price = house.css(".lif__pricing div::text").get()
             price = price.strip() if price is not None else None
-            rooms_area_baths = dict(
-                zip_longest(
-                    ["rooms", "area", "baths"],
-                    map(str.strip, house.css(".lif__data span::text").getall()),
-                )
+            features_keys = list(map(str.strip, house.css(".lif__text::text").getall()))
+            features_keys = [
+                str(self.english_translation.get(f)) for f in features_keys
+            ]
+            features_vals = list(
+                map(str.strip, house.css(".lif__data .text-bold::text").getall())
             )
-            floor = house.css(".lif__data abbr::text").get()
-            if floor is not None:
-                floor = floor.strip()
             yield dict(
                 _id=_id,
                 title=title,
-                # url=url,
                 price=price,
-                floor=floor,
-                **rooms_area_baths
+                **{k: v for k, v in zip(features_keys, features_vals)}
             )
         next_page = response.css(
             "#listing-pagination .pull-right li a::attr(href)"

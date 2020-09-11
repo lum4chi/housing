@@ -11,7 +11,6 @@ from scrapy import Item, Field
 class HousingItem(Item):
     _id = Field()
     title = Field()
-    # url = Field()
     price = Field()
     rooms = Field()
     area = Field()
