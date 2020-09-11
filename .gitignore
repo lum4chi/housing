@@ -1,3 +1,13 @@
+# MacOS
+.DS_Store
+
+# Dev
+.vscode
+data/
+
+# Scrapyd
+dbs
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
