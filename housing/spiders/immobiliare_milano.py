@@ -29,9 +29,8 @@ class ImmobiliareMilanoSpider(scrapy.Spider):
                 )
             )
             floor = house.css(".lif__data abbr::text").get()
-            if floor is None:
-                floor = "0"
-            floor = floor.strip()
+            if floor is not None:
+                floor = floor.strip()
             yield dict(
                 _id=_id,
                 title=title,
