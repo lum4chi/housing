@@ -30,7 +30,7 @@ Install also `plotly` renderer support for `jupyterlab`:
 
 
 ## Development
-Every addition to this code is more than welcomed! Just remember to install the env with:
+Every addition to this code is more than welcomed! Just remember to install the env including devs packages:
 > pipenv install --dev
-in order to install every development package used.
+
 
