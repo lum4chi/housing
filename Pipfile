@@ -11,6 +11,7 @@ matplotlib = "*"
 seaborn = "*"
 pylint = "*"
 black = "*"
+nbstripout = "*"
 
 [packages]
 scrapy = "*"

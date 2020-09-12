@@ -27,3 +27,10 @@ Delete project:
 ## Exploration
 Install also `plotly` renderer support for `jupyterlab`:
 > jupyter labextension install jupyterlab-plotly
+
+
+## Development
+Every addition to this code is more than welcomed! Just remember to install the env with:
+> pipenv install --dev
+in order to install every development package used.
+
