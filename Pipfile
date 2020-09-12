@@ -16,6 +16,10 @@ black = "*"
 scrapy = "*"
 scrapyd = "*"
 scrapyd-client = "*"
+geopy = "*"
+pyarrow = "*"
+tqdm = "*"
+plotly = "*"
 
 [requires]
 python_version = "3.8"

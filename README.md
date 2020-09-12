@@ -18,3 +18,8 @@ Terminate job
 
 Delete project
 > curl http://localhost:6800/delproject.json -d project=housing
+
+
+## Exploration
+Install also `plotly` renderer support for `jupyterlab`
+> jupyter labextension install jupyterlab-plotly
