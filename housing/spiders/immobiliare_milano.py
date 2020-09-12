@@ -10,7 +10,7 @@ class ImmobiliareMilanoSpider(scrapy.Spider):
     # Do your search and then copy/paste url
     start_urls = ["https://www.immobiliare.it/vendita-case/milano/?criterio=rilevanza"]
     english_translation = {
-        "locali": "room",
+        "locali": "rooms",
         "superficie": "area",
         "bagni": "baths",
         "piano": "floor",
