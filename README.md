@@ -25,8 +25,10 @@ Delete project:
 
 
 ## Exploration
-Install also `plotly` renderer support for `jupyterlab`:
-> jupyter labextension install jupyterlab-plotly  
+Install `plotly` renderer support for `jupyterlab`:
+> jupyter labextension install jupyterlab-plotly
+
+Install also widgets to use interactive plots:
 > jupyter labextension install @jupyter-widgets/jupyterlab-manager plotlywidget
 
 
