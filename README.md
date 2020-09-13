@@ -1,5 +1,5 @@
 # Housing
-Data crawler & analysis to find housing.
+Data crawler & analysis tools to find housing.
 
 Instruction: crawl some data first, then use notebooks to explore data.
 
@@ -26,7 +26,7 @@ Delete project:
 
 ## Exploration
 Install also `plotly` renderer support for `jupyterlab`:
-> jupyter labextension install jupyterlab-plotly
+> jupyter labextension install jupyterlab-plotly  
 > jupyter labextension install @jupyter-widgets/jupyterlab-manager plotlywidget
 
 
