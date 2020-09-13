@@ -20,6 +20,7 @@ scrapyd-client = "*"
 pyarrow = "*"
 tqdm = "*"
 plotly = "*"
+ipywidgets = "*"
 
 [requires]
 python_version = "3.8"
