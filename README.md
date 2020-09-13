@@ -11,11 +11,11 @@ Install `pipenv` and run:
 Start Scrapyd daemon:
 > scrapyd
 
-Build spider ("eggify"):
+Update the crawler of your choice and build the project ("eggify"):
 > scrapyd-deploy
 
 Start crawler:
-> curl http://localhost:6800/schedule.json -d project=housing -d spider=immobiliare-milano
+> curl http://localhost:6800/schedule.json -d project=housing -d spider=`spider-name`
 
 Terminate crawler:
 > curl http://localhost:6800/cancel.json -d project=housing -d job=`jobid`
