@@ -7,6 +7,7 @@ from housing.utils import dict_filter
 class ImmobiliareMilanoSpider(scrapy.Spider):
     name = "immobiliare-milano"
     allowed_domains = ["immobiliare.it"]
+    # This will crawl a huge number of houses, use with discretion!
     start_urls = [
         "https://www.immobiliare.it/ricerca.php?idCategoria=1&idContratto=1&idNazione=IT&raggio=11983.347766088&criterio=rilevanza&ordine=desc&tipoProprieta=1&noAste=1&pag=1&centro=45.469762,9.181137"
     ]
@@ -50,7 +51,7 @@ class ImmobiliareMilanoSpider(scrapy.Spider):
 
 
 class FilteredImmobiliareMilanoSpider(ImmobiliareMilanoSpider):
-    name = "filtered-immobiliare-milano"
+    name = "immobiliare-milano-filtered"
     # Hint: do your search from the website and then copy/paste url
     start_urls = [
         "https://www.immobiliare.it/ricerca.php?idCategoria=1&idContratto=1&idNazione=IT&prezzoMinimo=120000&prezzoMassimo=280000&raggio=11983.347766088&localiMinimo=2&localiMassimo=3&criterio=rilevanza&ordine=desc&tipoProprieta=1&noAste=1&pag=1&centro=45.469762,9.181137"

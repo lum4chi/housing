@@ -1,8 +1,8 @@
-def dict_filter(d, filter_values=[None, "", [], {}]):
+def dict_filter(d, values=[None, "", [], {}]):
     if not isinstance(d, dict):
         return
     for k, v in list(d.items()):
-        if v in filter_values:
+        if v in values:
             del d[k]
         elif isinstance(v, dict):
             dict_filter(v)
