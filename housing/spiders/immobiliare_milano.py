@@ -54,5 +54,5 @@ class FilteredImmobiliareMilanoSpider(ImmobiliareMilanoSpider):
     name = "immobiliare-milano-filtered"
     # Hint: do your search from the website and then copy/paste url
     start_urls = [
-        "https://www.immobiliare.it/ricerca.php?idCategoria=1&idContratto=1&idNazione=IT&prezzoMinimo=140000&prezzoMassimo=260000&raggio=11983.347766088&localiMinimo=2&localiMassimo=3&criterio=rilevanza&ordine=desc&tipoProprieta=1&noAste=1&pag=1&centro=45.469762,9.181137"
+        "https://www.immobiliare.it/ricerca.php?idCategoria=1&idContratto=1&idNazione=IT&prezzoMinimo=140000&prezzoMassimo=250000&raggio=11983.347766088&localiMinimo=2&localiMassimo=3&criterio=rilevanza&ordine=desc&tipoProprieta=1&noAste=1&pag=1&centro=45.469762,9.181137"
     ]
