@@ -1,7 +1,7 @@
 # Housing
 Data crawler & analysis tools to find housing.
 
-Instruction: crawl some data first, then use notebooks to explore data.
+Instruction: crawl some data first, then use notebooks to explore data. ⚠ **Crawl responsibly!** ⚠
 
 ## Requirements
 Install `pipenv` and run:
