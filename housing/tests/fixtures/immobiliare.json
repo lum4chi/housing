@@ -1,0 +1,244 @@
+{
+    "listing": {
+        "id": 12345678,
+        "type": "ad",
+        "contract": {
+            "type": "sale",
+            "name": "Vendita",
+            "value": "Vendita"
+        },
+        "advertiser": {
+            "agency": {
+                "id": 14161,
+                "type": "agency",
+                "customType": null,
+                "label": "agenzia",
+                "displayName": "FAKE Immobiliare S.A.S.",
+                "imageUrl": "https:\/\/pic.im-cdn.it\/imagenoresize\/123456789.jpg",
+                "agencyUrl": "https:\/\/www.immobiliare.it\/agenzie-immobiliari\/12345\/fake\/",
+                "phones": [
+                    {
+                        "type": "tel1",
+                        "value": "0123456789",
+                        "formattedValue": "01 2345 6789"
+                    }
+                ],
+                "externalLinks": null,
+                "text": null,
+                "track": null,
+                "guaranteed": false,
+                "isPaid": true
+            },
+            "supervisor": null
+        },
+        "title": "Appartamento via Pippo, Milano",
+        "properties": [
+            {
+                "description": "Lorem ipsum ixit amet .\n",
+                "defaultDescription": "",
+                "condition": {
+                    "id": "2",
+                    "name": "Buono \/ Abitabile"
+                },
+                "surfaceConstitution": {
+                    "totalMainSurface": "218,0 m\u00b2",
+                    "totalCommercialSurface": null,
+                    "surfaceConstitutionElements": [
+                        {
+                            "constitution": "Abitazione",
+                            "floor": "Ammezzato",
+                            "surface": "218,0 m\u00b2",
+                            "percentage": "100 %",
+                            "surfaceType": "Principale",
+                            "commercialSurface": "218,0 m\u00b2"
+                        }
+                    ]
+                },
+                "surfaceValue": "218 m\u00b2",
+                "typology": {
+                    "id": 4,
+                    "name": "Appartamento"
+                },
+                "category": {
+                    "id": 1,
+                    "name": "Residenziale"
+                },
+                "costs": {
+                    "price": 1000000,
+                    "currency": "\u20ac",
+                    "formattedPrice": [
+                        "\u20ac 1.000.000"
+                    ],
+                    "formattedPriceTop": [
+                        "\u20ac 1.000.000"
+                    ],
+                    "visible": true,
+                    "condominiumExpensesValue": "\u20ac 500\/mese",
+                    "expensesValue": null,
+                    "loweredPrice": null
+                },
+                "multimedia": {
+                    "photos": [
+                        {
+                            "id": 123456789,
+                            "caption": "bagni",
+                            "urls": {
+                                "small": "https:\/\/pic.im-cdn.it\/image\/123456789\/thumb.jpg",
+                                "medium": "https:\/\/pic.im-cdn.it\/image\/123456789\/m-c.jpg",
+                                "large": "https:\/\/pic.im-cdn.it\/image\/123456789\/xxl.jpg"
+                            },
+                            "alt": "foto bagni Appartamento via Pippo, Milano"
+                        }
+                    ],
+                    "floorplans": [
+                        {
+                            "id": 987654321,
+                            "caption": "planimetria",
+                            "interactive": false,
+                            "urls": {
+                                "small": "https:\/\/pic.im-cdn.it\/plan\/987654321\/thumb.jpg",
+                                "medium": "https:\/\/pic.im-cdn.it\/plan\/987654321\/m.jpg",
+                                "large": "https:\/\/pic.im-cdn.it\/plan\/987654321\/xxl.jpg"
+                            }
+                        },
+                        {
+                            "url": "https:\/\/getrix.floorplanner.com\/xbzfmm\/spaceplanner",
+                            "interactive": true
+                        }
+                    ],
+                    "videos": [
+                        {
+                            "id": 123456789,
+                            "url": "https:\/\/youtube.com\/embed\/xxxxyyyyzzz"
+                        }
+                    ],
+                    "virtualTours": [
+                        {
+                            "id": null,
+                            "url": "https:\/\/tour360.getrix.it\/vrtours\/123456\/"
+                        }
+                    ],
+                    "documents": null,
+                    "hasMultimedia": true
+                },
+                "portions": [],
+                "location": {
+                    "latitude": 45.00,
+                    "longitude": 9.00,
+                    "zoom": null,
+                    "nation": {
+                        "id": "IT",
+                        "name": "Italia",
+                        "keyurl": "Italia"
+                    },
+                    "region": {
+                        "id": "lom",
+                        "name": "Lombardia",
+                        "keyurl": "Lombardia"
+                    },
+                    "province": {
+                        "id": "MI",
+                        "name": "Milano",
+                        "keyurl": "Milano"
+                    },
+                    "city": {
+                        "id": "8042",
+                        "name": "Milano",
+                        "keyurl": "Milano"
+                    },
+                    "macrozone": {
+                        "id": "10070",
+                        "name": "Citt\u00e0 Studi, Susa",
+                        "keyurl": "citta-studi-susa"
+                    },
+                    "microzone": {
+                        "id": "10349",
+                        "name": "Citt\u00e0 Studi",
+                        "keyurl": null
+                    },
+                    "locality": null,
+                    "address": "via Pippo",
+                    "streetNumber": "",
+                    "marker": "marker"
+                }
+            }
+        ]
+    },
+    "user": {
+        "name": "Nome",
+        "surname": "Cognome",
+        "email": "nome.cognome@gmail.com",
+        "emailVerified": true,
+        "phone": "0123456789",
+        "phoneVerified": true,
+        "dataCreation": ""
+    },
+    "isAlternate": false,
+    "trovakasa": {
+        "fkNazione": "IT",
+        "regione": "lom",
+        "provincia": "MI",
+        "comune": 8042,
+        "zona": "10070",
+        "contratto": 1,
+        "categoria": 1,
+        "tipologia": 4,
+        "fkStato": 2,
+        "bagni": 3,
+        "tipoProprieta": 1,
+        "riscaldamento": 2,
+        "prezzoMin": 980000,
+        "prezzoMax": 1200000,
+        "supMin": 190,
+        "supMax": 240,
+        "locMin": 5,
+        "locMax": 5,
+        "boxauto": 1,
+        "giardino": "20",
+        "terrazzo": "on",
+        "classeEnergetica": 5,
+        "ascensore": 1
+    },
+    "socials": null,
+    "listingSearchUrl": "\/vendita-appartamenti\/milano\/",
+    "tracking": {
+        "pageType": "detail",
+        "section": "annunci_residenziali",
+        "facebookAppId": 1111112222233333,
+        "content_type": [
+            "hotel",
+            "product",
+            "home_listing"
+        ],
+        "content_ids": 11112222,
+        "value": 1000000,
+        "currency": "EUR",
+        "city": "Milano",
+        "region": "Milano",
+        "country": "Italia",
+        "content_category": "Vendita",
+        "destination": "Residenziale",
+        "deviceType": "Desktop",
+        "availability": "for_sale",
+        "listing_type": "for_sale_by_agent",
+        "property_type": "apartment"
+    },
+    "siteConfiguration": {
+        "siteName": "Immobiliare.it",
+        "product": "immobiliare-it"
+    },
+    "pageState": {
+        "language": null,
+        "isPreview": false
+    },
+    "features": {
+        "LISTING_TRACK_VISIT": false,
+        "SHOW_MULTI_CONTACT_FORM": false,
+        "CONTACT_FORM_AGENT_PHONE_PRIORITY_OVER_AGENCY": false,
+        "POI_ENABLED": true,
+        "CHAT_ENABLED": true,
+        "PRICE_CHART_ENABLED": true,
+        "CONSTRUCTION_DOCS_ENABLED": true
+    },
+    "descriptionTranslatorToken": "55555242bfc77777a0228baaaaae452d"
+}

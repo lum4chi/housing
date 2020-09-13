@@ -15,3 +15,6 @@ class HousingItem(Item):
     rooms = Field()
     area = Field()
     baths = Field()
+    address = Field()
+    lat = Field()
+    lon = Field()

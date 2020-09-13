@@ -14,7 +14,6 @@ BOT_NAME = "housing"
 SPIDER_MODULES = ["housing.spiders"]
 NEWSPIDER_MODULE = "housing.spiders"
 
-
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'housing (+http://www.yourdomain.com)'
 
@@ -47,10 +46,14 @@ NEWSPIDER_MODULE = "housing.spiders"
 #    'housing.middlewares.MyCustomSpiderMiddleware': 543,
 # }
 
+# scrapy-proxy-pool - seems not working or maintained
+# PROXY_POOL_ENABLED = True
+
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 # DOWNLOADER_MIDDLEWARES = {
-#    'housing.middlewares.MyCustomDownloaderMiddleware': 543,
+#     "scrapy_proxy_pool.middlewares.ProxyPoolMiddleware": 610,
+#     "scrapy_proxy_pool.middlewares.BanDetectionMiddleware": 620,
 # }
 
 # Enable or disable extensions
