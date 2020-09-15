@@ -14,6 +14,8 @@ BOT_NAME = "housing"
 SPIDER_MODULES = ["housing.spiders"]
 NEWSPIDER_MODULE = "housing.spiders"
 
+URLLENGTH_LIMIT = 4096
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'housing (+http://www.yourdomain.com)'
 
